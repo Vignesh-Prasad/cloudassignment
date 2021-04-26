@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+         <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+
+    </head> 
+    <body>
+        <script>src="fireBase.js"</script> 
+        
+    <div ng-app="myApp" ng-controller="myCtrl"> 
+
+    
+    </div>
+      
+
+            
+        <div class="background">
+            <div class="nav">
+                <a class="a active"href="#">Welcome</a>
+                <a class="b" href="#">About</a>
+                <a class="c" href="#">Buses</a>
+                <a class="d" href="#">contact Us</a>
+]]                <h2><a href="booking1.html"><center>Click here to book</center></a></h2>
+            </div>
+        <div class="content">
+            <div class="home">
+                <h1>Paradise Travels</h1>
+            </div>
+            <div class="about">
+                <p><b>Welcome to Online Booking system,</b><br>
+                <p>An increase in bus booking in India with a better availability of bus tickets online than before is a travel trend to reckon with.<br>
+                     India has the second largest road network in the world stretching to 56,03,293 km of road length which makes road travel all the more like it.<br>
+                      Travelling by road is much more feasible especially for the routes and destinations with no air and train connectivity including far-flung villages and towns.<br>
+                       Besides there are always people who prefer city to city bus travel than booking flights for a relaxed journey at a lesser price. 
+                       Here we make your online bus booking a smooth experience. <br>
+                       There are many online bus ticket bookings are availble but here we are making this application for local journey within a particular city</p>
+                    
+            </div>
+            <div class="projects">
+                <h2>Buses</h2>
+                <p>
+                    <table class="w3-table w3-striped w3-bordered">
+                        <thead>
+                        <tr class="w3-theme">
+                          <th>Bus No</th>
+                          <th>From</th>
+                          <th>To</th>
+                          <th>Phone</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>5676</td>
+                          <td>Periyar</td>
+                          <td>Thiruparangundram</td>
+                          <td>9786655465</td>
+                        </tr>
+                        <tr>
+                          <td>5676</td>
+                          <td>MGR Bus stand</td>
+                          <td>Periyar</td>
+                          <td>9786655465</td>
+                        </tr>
+                        <tr>
+                          <td>5676</td>
+                          <td>Thiruparangundram</td>
+                          <td>Periyar</td>
+                          <td>9786655465</td>
+                        </tr>
+                        <tr>
+                          <td>5676</td>
+                          <td>Periyar</td>
+                          <td>MGR Bus stand</td>
+                          <td>9786655465</td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                   
+                </p>
+            </div>
+            <div class="contact">
+                <p><b>Vignesh-Suntharamoorthy-Srivatsan</b></p><br>
+                <p><b>Phone no.: 9385986000,6382838485,9423871740</b></p><br>
+                <p><b>Gmail:abconlineticketbooking@gmail.com</b></p>
+
+            </div>
+
+        </div> 
+        </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a').click(function(){
+                //alert("I am clicking");
+                var selected = $(this);
+                $('a').removeClass('active');
+                $(selected).addClass('active');
+
+
+            });
+            var $a = $('.a'),
+            $b = $('.b'),
+            $c = $('.c'),
+            $d = $('.d'),
+            $home = $('.home'),
+            $about = $('.about'),
+            $projects = $('.projects'),
+            $contact = $('.contact');
+
+
+            $a.click(function(){
+                $home.fadeIn();
+                $about.fadeOut();
+                $projects.fadeOut();
+                $contact.fadeOut();
+                
+
+            });
+            $b.click(function(){
+                $about.fadeIn();
+                $home.fadeOut();
+                $projects.fadeOut();
+                $contact.fadeOut();
+                
+
+            });
+            $c.click(function(){
+                $projects.fadeIn();
+                $home.fadeOut();
+                $about.fadeOut();
+                $contact.fadeOut();
+            });
+            $d.click(function(){
+                $contact.fadeIn();
+                $home.fadeOut();
+                $about.fadeOut();
+                $projects.fadeOut();
+            });
+
+        });
+    
+    
+    </script>
+    </body>
+</html>
